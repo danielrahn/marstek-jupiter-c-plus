@@ -6,6 +6,18 @@ Documentation and resources for the Marstek Jupiter C Plus.
 
 The device supports data reading via the **RS485 interface** using Modbus RTU protocol.
 
+### RS485 Pinout
+
+| Pin | Signal |
+| --- | ------ |
+| 1   | A      |
+| 2   | B      |
+| 3   | +5V    |
+| 4   | -      |
+| 5   | Ground |
+
+**Note:** Pin 3 (+5V) does not appear to be working.
+
 ### Protocol & Serial Settings
 
 - **Protocol:** Modbus RTU
