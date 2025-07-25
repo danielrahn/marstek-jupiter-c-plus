@@ -77,6 +77,51 @@ The device supports data reading via the **RS485 interface** using Modbus RTU pr
 | 0x1007   | PV4 working status                 | 2     | u16  |           |            |         | 0: not working<br>1: working                                                                                                 |
 | 0x1008   | INV working status                 | 2     | u16  |           |            |         | 0: not working<br>1: working                                                                                                 |
 
+## Elfin-EW11
+
+[Elfin-EW11 RS485 to WiFi](http://www.hi-flying.com/elfin-ew10-elfin-ew11)
+
+1. First Time Setup
+   - Connect to `EW11...` access point
+   - Open [http://10.10.100.254](http://10.10.100.254)
+   - Username `admin`
+   - Password `admin`
+2. System Settings
+   - WiFi Settings
+     - WiFi Mode `STA`
+     - STA SSID `...`
+     - STA KEY `...`
+3. Serial Port Settings
+   - Basic Settings
+     - Baud Rate `115200`
+     - Data Bit `8`
+     - Stop Bit `1`
+     - Parity `None`
+   - Buffer Settings
+     - Buffer Size `512`
+     - Gap Time `50`
+   - Flow Control Settings
+     - Flow Control `Disable`
+   - Cli Settings
+     - Cli `Disable`
+   - Protocol Settings
+     - Protocol `Modbus`
+4. Communication Settings
+   - Basic Settings
+     - Protocol `Tcp Server`
+   - Socket Settings
+     - Local Port `502`
+     - Buffer Size `512`
+     - Keep Alive(s) `60`
+     - Timeout(s) `300`
+   - Protocol Settings
+     - Max Accept `3`
+   - More Settings
+     - Security `Disable`
+     - Route `Uart`
+5. Others
+   - Restart
+
 ## References
 
 - [User Manual](marstek-jupiter-c-plus-user-manual.pdf)
