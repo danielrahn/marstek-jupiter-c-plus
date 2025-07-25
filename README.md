@@ -139,6 +139,14 @@ homeassistant:
 
 Place the [marstek_jupiter_c_plus.yaml](marstek_jupiter_c_plus.yaml) file inside the `packages` directory.
 
+## Smart Meter Emulation
+
+A smart meter for zero feed-in can be emulated using [b2500-meter](https://github.com/tomquist/b2500-meter).
+
+### EDL21 Smart Meters
+
+EDL21 Smart Meters can be directly integrated in Home Assistant and used together with b2500-meter. However, Home Assistant by default updates the EDL21 sensor only every 60 seconds. To update more frequently, the workaround described here can be used: https://github.com/home-assistant/core/issues/83918#issuecomment-1679296717
+
 ## References
 
 - [User Manual](marstek-jupiter-c-plus-user-manual.pdf)
