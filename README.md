@@ -2,6 +2,20 @@
 
 Documentation and resources for the Marstek Jupiter C Plus.
 
+## Known Issues
+
+### Extension Battery Not Recognized
+
+Press and hold the power button. When the light turns off, keep holding until the switch blinks, then release the button immediately.
+
+### Error Code 0425
+
+Overvoltage warning. Contact support for firmware update.
+
+### Won't Charge/Discharge
+
+This may be caused by a mismatch between firmware component versions. Contact support for firmware update.
+
 ## Modbus Communication
 
 The device supports data reading via the **RS485 interface** using Modbus RTU protocol.
