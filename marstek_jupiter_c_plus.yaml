@@ -1,0 +1,364 @@
+modbus:
+  - name: "Marstek Jupiter C Plus"
+    type: tcp
+    host: ew11
+    port: 502
+    sensors:
+      - name: "PV1 Voltage"
+        unique_id: "marstek_jupiter_c_plus_pv1_voltage"
+        address: 0x0001
+        input_type: holding
+        data_type: uint16
+        scale: 0.1
+        precision: 1
+        unit_of_measurement: "V"
+        device_class: voltage
+        state_class: measurement
+
+      - name: "PV1 Current"
+        unique_id: "marstek_jupiter_c_plus_pv1_current"
+        address: 0x0002
+        input_type: holding
+        data_type: uint16
+        scale: 0.1
+        precision: 1
+        unit_of_measurement: "A"
+        device_class: current
+        state_class: measurement
+
+      - name: "PV1 Power"
+        unique_id: "marstek_jupiter_c_plus_pv1_power"
+        address: 0x0003
+        input_type: holding
+        data_type: uint16
+        scale: 1
+        precision: 0
+        unit_of_measurement: "W"
+        device_class: power
+        state_class: measurement
+
+      - name: "PV2 Voltage"
+        unique_id: "marstek_jupiter_c_plus_pv2_voltage"
+        address: 0x0004
+        input_type: holding
+        data_type: uint16
+        scale: 0.1
+        precision: 1
+        unit_of_measurement: "V"
+        device_class: voltage
+        state_class: measurement
+
+      - name: "PV2 Current"
+        unique_id: "marstek_jupiter_c_plus_pv2_current"
+        address: 0x0005
+        input_type: holding
+        data_type: uint16
+        scale: 0.1
+        precision: 1
+        unit_of_measurement: "A"
+        device_class: current
+        state_class: measurement
+
+      - name: "PV2 Power"
+        unique_id: "marstek_jupiter_c_plus_pv2_power"
+        address: 0x0006
+        input_type: holding
+        data_type: uint16
+        scale: 1
+        precision: 0
+        unit_of_measurement: "W"
+        device_class: power
+        state_class: measurement
+
+      - name: "PV3 Voltage"
+        unique_id: "marstek_jupiter_c_plus_pv3_voltage"
+        address: 0x0007
+        input_type: holding
+        data_type: uint16
+        scale: 0.1
+        precision: 1
+        unit_of_measurement: "V"
+        device_class: voltage
+        state_class: measurement
+
+      - name: "PV3 Current"
+        unique_id: "marstek_jupiter_c_plus_pv3_current"
+        address: 0x0008
+        input_type: holding
+        data_type: uint16
+        scale: 0.1
+        precision: 1
+        unit_of_measurement: "A"
+        device_class: current
+        state_class: measurement
+
+      - name: "PV3 Power"
+        unique_id: "marstek_jupiter_c_plus_pv3_power"
+        address: 0x0009
+        input_type: holding
+        data_type: uint16
+        scale: 1
+        precision: 0
+        unit_of_measurement: "W"
+        device_class: power
+        state_class: measurement
+
+      - name: "PV4 Voltage"
+        unique_id: "marstek_jupiter_c_plus_pv4_voltage"
+        address: 0x000A
+        input_type: holding
+        data_type: uint16
+        scale: 0.1
+        precision: 1
+        unit_of_measurement: "V"
+        device_class: voltage
+        state_class: measurement
+
+      - name: "PV4 Current"
+        unique_id: "marstek_jupiter_c_plus_pv4_current"
+        address: 0x000B
+        input_type: holding
+        data_type: uint16
+        scale: 0.1
+        precision: 1
+        unit_of_measurement: "A"
+        device_class: current
+        state_class: measurement
+
+      - name: "PV4 Power"
+        unique_id: "marstek_jupiter_c_plus_pv4_power"
+        address: 0x000C
+        input_type: holding
+        data_type: uint16
+        scale: 1
+        precision: 0
+        unit_of_measurement: "W"
+        device_class: power
+        state_class: measurement
+
+      - name: "Grid Power"
+        unique_id: "marstek_jupiter_c_plus_grid_power"
+        address: 0x000D
+        input_type: holding
+        data_type: uint16
+        scale: 1
+        precision: 0
+        unit_of_measurement: "W"
+        device_class: power
+        state_class: measurement
+
+      - name: "Battery Voltage"
+        unique_id: "marstek_jupiter_c_plus_battery_voltage"
+        address: 0x000F
+        input_type: holding
+        data_type: uint16
+        scale: 0.1
+        precision: 1
+        unit_of_measurement: "V"
+        device_class: voltage
+        state_class: measurement
+
+      - name: "Battery SOC"
+        unique_id: "marstek_jupiter_c_plus_battery_soc"
+        address: 0x0010
+        input_type: holding
+        data_type: uint16
+        scale: 1
+        precision: 0
+        unit_of_measurement: "%"
+        device_class: battery
+        state_class: measurement
+
+      - name: "Daily Power Generation"
+        unique_id: "marstek_jupiter_c_plus_daily_power_generation"
+        address: 0x0013
+        input_type: holding
+        data_type: uint32
+        scale: 0.01
+        precision: 2
+        unit_of_measurement: "kWh"
+        device_class: energy
+        state_class: total_increasing
+
+      - name: "Monthly Power Generation"
+        unique_id: "marstek_jupiter_c_plus_monthly_power_generation"
+        address: 0x0015
+        input_type: holding
+        data_type: uint32
+        scale: 0.01
+        precision: 2
+        unit_of_measurement: "kWh"
+        device_class: energy
+        state_class: total_increasing
+
+      - name: "Daily Grid-Connected Electricity"
+        unique_id: "marstek_jupiter_c_plus_daily_grid_electricity"
+        address: 0x0017
+        input_type: holding
+        data_type: uint32
+        scale: 0.01
+        precision: 2
+        unit_of_measurement: "kWh"
+        device_class: energy
+        state_class: total_increasing
+
+      - name: "Monthly Grid-Connected Electricity"
+        unique_id: "marstek_jupiter_c_plus_monthly_grid_electricity"
+        address: 0x0019
+        input_type: holding
+        data_type: uint32
+        scale: 0.01
+        precision: 2
+        unit_of_measurement: "kWh"
+        device_class: energy
+        state_class: total_increasing
+
+      - name: "Device ID"
+        unique_id: "marstek_jupiter_c_plus_device_id"
+        address: 0x001B
+        input_type: holding
+        data_type: uint16
+
+      - name: "EMS Version"
+        unique_id: "marstek_jupiter_c_plus_ems_version"
+        address: 0x001C
+        input_type: holding
+        data_type: uint16
+
+      - name: "INV Version"
+        unique_id: "marstek_jupiter_c_plus_inv_version"
+        address: 0x001D
+        input_type: holding
+        data_type: uint16
+
+      - name: "MPPT Version"
+        unique_id: "marstek_jupiter_c_plus_mppt_version"
+        address: 0x001E
+        input_type: holding
+        data_type: uint16
+
+      - name: "BMS Version"
+        unique_id: "marstek_jupiter_c_plus_bms_version"
+        address: 0x001F
+        input_type: holding
+        data_type: uint16
+
+      - name: "Screen Version"
+        unique_id: "marstek_jupiter_c_plus_screen_version"
+        address: 0x0022
+        input_type: holding
+        data_type: uint16
+
+      - name: "Device Type"
+        unique_id: "marstek_jupiter_c_plus_device_type"
+        address: 0x0025
+        input_type: holding
+        data_type: uint16
+
+      - name: "PV1 Working Status"
+        unique_id: "marstek_jupiter_c_plus_pv1_working_status"
+        address: 0x1004
+        input_type: holding
+        data_type: uint16
+
+      - name: "PV2 Working Status"
+        unique_id: "marstek_jupiter_c_plus_pv2_working_status"
+        address: 0x1005
+        input_type: holding
+        data_type: uint16
+
+      - name: "PV3 Working Status"
+        unique_id: "marstek_jupiter_c_plus_pv3_working_status"
+        address: 0x1006
+        input_type: holding
+        data_type: uint16
+
+      - name: "PV4 Working Status"
+        unique_id: "marstek_jupiter_c_plus_pv4_working_status"
+        address: 0x1007
+        input_type: holding
+        data_type: uint16
+
+      - name: "INV Working Status"
+        unique_id: "marstek_jupiter_c_plus_inv_working_status"
+        address: 0x1008
+        input_type: holding
+        data_type: uint16
+
+template:
+  - sensor:
+      - name: "Device Type Text"
+        unique_id: "marstek_jupiter_c_plus_device_type_text"
+        state: >
+          {% set device_type = states('sensor.marstek_jupiter_c_plus_device_type') | int(0) %}
+          {% if device_type == 0 %}
+            Jupiter C 800W
+          {% elif device_type == 1 %}
+            Jupiter C 1000W
+          {% elif device_type == 2 %}
+            Jupiter C 600W
+          {% elif device_type == 3 %}
+            Jupiter E 800W
+          {% elif device_type == 4 %}
+            Jupiter E 1000W
+          {% elif device_type == 5 %}
+            Jupiter E 600W
+          {% else %}
+            Unknown
+          {% endif %}
+
+      - name: "PV1 Status Text"
+        unique_id: "marstek_jupiter_c_plus_pv1_status_text"
+        state: >
+          {% if states('sensor.marstek_jupiter_c_plus_pv1_working_status') == '1' %}
+            Working
+          {% else %}
+            Not Working
+          {% endif %}
+
+      - name: "PV2 Status Text"
+        unique_id: "marstek_jupiter_c_plus_pv2_status_text"
+        state: >
+          {% if states('sensor.marstek_jupiter_c_plus_pv2_working_status') == '1' %}
+            Working
+          {% else %}
+            Not Working
+          {% endif %}
+
+      - name: "PV3 Status Text"
+        unique_id: "marstek_jupiter_c_plus_pv3_status_text"
+        state: >
+          {% if states('sensor.marstek_jupiter_c_plus_pv3_working_status') == '1' %}
+            Working
+          {% else %}
+            Not Working
+          {% endif %}
+
+      - name: "PV4 Status Text"
+        unique_id: "marstek_jupiter_c_plus_pv4_status_text"
+        state: >
+          {% if states('sensor.marstek_jupiter_c_plus_pv4_working_status') == '1' %}
+            Working
+          {% else %}
+            Not Working
+          {% endif %}
+
+      - name: "INV Status Text"
+        unique_id: "marstek_jupiter_c_plus_inv_status_text"
+        state: >
+          {% if states('sensor.marstek_jupiter_c_plus_inv_working_status') == '1' %}
+            Working
+          {% else %}
+            Not Working
+          {% endif %}
+
+      - name: "Total PV Power"
+        unique_id: "marstek_jupiter_c_plus_total_pv_power"
+        unit_of_measurement: "W"
+        device_class: power
+        state_class: measurement
+        state: >
+          {{ (states('sensor.marstek_jupiter_c_plus_pv1_power') | float(0) +
+              states('sensor.marstek_jupiter_c_plus_pv2_power') | float(0) +
+              states('sensor.marstek_jupiter_c_plus_pv3_power') | float(0) +
+              states('sensor.marstek_jupiter_c_plus_pv4_power') | float(0)) | round(0) }}

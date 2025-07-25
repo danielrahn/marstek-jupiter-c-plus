@@ -122,6 +122,17 @@ The device supports data reading via the **RS485 interface** using Modbus RTU pr
 5. Others
    - Restart
 
+## Home Assistant
+
+`configuration.yaml`
+
+```yaml
+homeassistant:
+  packages: !include_dir_named packages
+```
+
+Place the [marstek_jupiter_c_plus.yaml](marstek_jupiter_c_plus.yaml) file inside the `packages` directory.
+
 ## References
 
 - [User Manual](marstek-jupiter-c-plus-user-manual.pdf)
