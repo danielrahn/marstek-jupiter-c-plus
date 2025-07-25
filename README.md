@@ -20,7 +20,9 @@ This may be caused by a mismatch between firmware component versions. Contact su
 
 The device supports data reading via the **RS485 interface** using Modbus RTU protocol.
 
-### RS485 Pinout
+### RS485 Interface
+
+#### Pinout
 
 | Pin | Signal |
 | --- | ------ |
@@ -31,6 +33,10 @@ The device supports data reading via the **RS485 interface** using Modbus RTU pr
 | 5   | Ground |
 
 **Note:** Pin 3 (+5V) does not appear to be working.
+
+#### Compatible Connector
+
+[Weipu SP17 5Pin 5A](https://www.weipuconnector.com/products/sp17/)
 
 ### Protocol & Serial Settings
 
