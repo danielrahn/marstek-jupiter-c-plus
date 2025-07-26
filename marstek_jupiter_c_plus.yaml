@@ -255,35 +255,36 @@ modbus:
         input_type: holding
         data_type: uint16
 
+    binary_sensors:
       - name: "Marstek Jupiter C Plus PV1 Working Status"
         unique_id: "marstek_jupiter_c_plus_pv1_working_status"
         address: 0x1004
         input_type: holding
-        data_type: uint16
+        device_class: running
 
       - name: "Marstek Jupiter C Plus PV2 Working Status"
         unique_id: "marstek_jupiter_c_plus_pv2_working_status"
         address: 0x1005
         input_type: holding
-        data_type: uint16
+        device_class: running
 
       - name: "Marstek Jupiter C Plus PV3 Working Status"
         unique_id: "marstek_jupiter_c_plus_pv3_working_status"
         address: 0x1006
         input_type: holding
-        data_type: uint16
+        device_class: running
 
       - name: "Marstek Jupiter C Plus PV4 Working Status"
         unique_id: "marstek_jupiter_c_plus_pv4_working_status"
         address: 0x1007
         input_type: holding
-        data_type: uint16
+        device_class: running
 
       - name: "Marstek Jupiter C Plus INV Working Status"
         unique_id: "marstek_jupiter_c_plus_inv_working_status"
         address: 0x1008
         input_type: holding
-        data_type: uint16
+        device_class: running
 
 template:
   - sensor:
@@ -305,51 +306,6 @@ template:
             Jupiter E 600W
           {% else %}
             Unknown
-          {% endif %}
-
-      - name: "Marstek Jupiter C Plus PV1 Status Text"
-        unique_id: "marstek_jupiter_c_plus_pv1_status_text"
-        state: >
-          {% if states('sensor.marstek_jupiter_c_plus_pv1_working_status') == '1' %}
-            Working
-          {% else %}
-            Not Working
-          {% endif %}
-
-      - name: "Marstek Jupiter C Plus PV2 Status Text"
-        unique_id: "marstek_jupiter_c_plus_pv2_status_text"
-        state: >
-          {% if states('sensor.marstek_jupiter_c_plus_pv2_working_status') == '1' %}
-            Working
-          {% else %}
-            Not Working
-          {% endif %}
-
-      - name: "Marstek Jupiter C Plus PV3 Status Text"
-        unique_id: "marstek_jupiter_c_plus_pv3_status_text"
-        state: >
-          {% if states('sensor.marstek_jupiter_c_plus_pv3_working_status') == '1' %}
-            Working
-          {% else %}
-            Not Working
-          {% endif %}
-
-      - name: "Marstek Jupiter C Plus PV4 Status Text"
-        unique_id: "marstek_jupiter_c_plus_pv4_status_text"
-        state: >
-          {% if states('sensor.marstek_jupiter_c_plus_pv4_working_status') == '1' %}
-            Working
-          {% else %}
-            Not Working
-          {% endif %}
-
-      - name: "Marstek Jupiter C Plus INV Status Text"
-        unique_id: "marstek_jupiter_c_plus_inv_status_text"
-        state: >
-          {% if states('sensor.marstek_jupiter_c_plus_inv_working_status') == '1' %}
-            Working
-          {% else %}
-            Not Working
           {% endif %}
 
       - name: "Marstek Jupiter C Plus Total PV Power"
