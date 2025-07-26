@@ -4,7 +4,7 @@ modbus:
     host: ew11
     port: 502
     sensors:
-      - name: "PV1 Voltage"
+      - name: "Marstek Jupiter C Plus PV1 Voltage"
         unique_id: "marstek_jupiter_c_plus_pv1_voltage"
         address: 0x0001
         input_type: holding
@@ -15,7 +15,7 @@ modbus:
         device_class: voltage
         state_class: measurement
 
-      - name: "PV1 Current"
+      - name: "Marstek Jupiter C Plus PV1 Current"
         unique_id: "marstek_jupiter_c_plus_pv1_current"
         address: 0x0002
         input_type: holding
@@ -26,7 +26,7 @@ modbus:
         device_class: current
         state_class: measurement
 
-      - name: "PV1 Power"
+      - name: "Marstek Jupiter C Plus PV1 Power"
         unique_id: "marstek_jupiter_c_plus_pv1_power"
         address: 0x0003
         input_type: holding
@@ -37,7 +37,7 @@ modbus:
         device_class: power
         state_class: measurement
 
-      - name: "PV2 Voltage"
+      - name: "Marstek Jupiter C Plus PV2 Voltage"
         unique_id: "marstek_jupiter_c_plus_pv2_voltage"
         address: 0x0004
         input_type: holding
@@ -48,7 +48,7 @@ modbus:
         device_class: voltage
         state_class: measurement
 
-      - name: "PV2 Current"
+      - name: "Marstek Jupiter C Plus PV2 Current"
         unique_id: "marstek_jupiter_c_plus_pv2_current"
         address: 0x0005
         input_type: holding
@@ -59,7 +59,7 @@ modbus:
         device_class: current
         state_class: measurement
 
-      - name: "PV2 Power"
+      - name: "Marstek Jupiter C Plus PV2 Power"
         unique_id: "marstek_jupiter_c_plus_pv2_power"
         address: 0x0006
         input_type: holding
@@ -70,7 +70,7 @@ modbus:
         device_class: power
         state_class: measurement
 
-      - name: "PV3 Voltage"
+      - name: "Marstek Jupiter C Plus PV3 Voltage"
         unique_id: "marstek_jupiter_c_plus_pv3_voltage"
         address: 0x0007
         input_type: holding
@@ -81,7 +81,7 @@ modbus:
         device_class: voltage
         state_class: measurement
 
-      - name: "PV3 Current"
+      - name: "Marstek Jupiter C Plus PV3 Current"
         unique_id: "marstek_jupiter_c_plus_pv3_current"
         address: 0x0008
         input_type: holding
@@ -92,7 +92,7 @@ modbus:
         device_class: current
         state_class: measurement
 
-      - name: "PV3 Power"
+      - name: "Marstek Jupiter C Plus PV3 Power"
         unique_id: "marstek_jupiter_c_plus_pv3_power"
         address: 0x0009
         input_type: holding
@@ -103,7 +103,7 @@ modbus:
         device_class: power
         state_class: measurement
 
-      - name: "PV4 Voltage"
+      - name: "Marstek Jupiter C Plus PV4 Voltage"
         unique_id: "marstek_jupiter_c_plus_pv4_voltage"
         address: 0x000A
         input_type: holding
@@ -114,7 +114,7 @@ modbus:
         device_class: voltage
         state_class: measurement
 
-      - name: "PV4 Current"
+      - name: "Marstek Jupiter C Plus PV4 Current"
         unique_id: "marstek_jupiter_c_plus_pv4_current"
         address: 0x000B
         input_type: holding
@@ -125,7 +125,7 @@ modbus:
         device_class: current
         state_class: measurement
 
-      - name: "PV4 Power"
+      - name: "Marstek Jupiter C Plus PV4 Power"
         unique_id: "marstek_jupiter_c_plus_pv4_power"
         address: 0x000C
         input_type: holding
@@ -136,7 +136,7 @@ modbus:
         device_class: power
         state_class: measurement
 
-      - name: "Grid Power"
+      - name: "Marstek Jupiter C Plus Grid Power"
         unique_id: "marstek_jupiter_c_plus_grid_power"
         address: 0x000D
         input_type: holding
@@ -147,7 +147,7 @@ modbus:
         device_class: power
         state_class: measurement
 
-      - name: "Battery Voltage"
+      - name: "Marstek Jupiter C Plus Battery Voltage"
         unique_id: "marstek_jupiter_c_plus_battery_voltage"
         address: 0x000F
         input_type: holding
@@ -158,7 +158,7 @@ modbus:
         device_class: voltage
         state_class: measurement
 
-      - name: "Battery SOC"
+      - name: "Marstek Jupiter C Plus Battery SOC"
         unique_id: "marstek_jupiter_c_plus_battery_soc"
         address: 0x0010
         input_type: holding
@@ -169,7 +169,7 @@ modbus:
         device_class: battery
         state_class: measurement
 
-      - name: "Daily Power Generation"
+      - name: "Marstek Jupiter C Plus Daily Power Generation"
         unique_id: "marstek_jupiter_c_plus_daily_power_generation"
         address: 0x0013
         input_type: holding
@@ -180,7 +180,7 @@ modbus:
         device_class: energy
         state_class: total_increasing
 
-      - name: "Monthly Power Generation"
+      - name: "Marstek Jupiter C Plus Monthly Power Generation"
         unique_id: "marstek_jupiter_c_plus_monthly_power_generation"
         address: 0x0015
         input_type: holding
@@ -191,8 +191,8 @@ modbus:
         device_class: energy
         state_class: total_increasing
 
-      - name: "Daily Grid-Connected Electricity"
-        unique_id: "marstek_jupiter_c_plus_daily_grid_electricity"
+      - name: "Marstek Jupiter C Plus Daily Grid-Connected Electricity"
+        unique_id: "marstek_jupiter_c_plus_daily_grid_connected_electricity"
         address: 0x0017
         input_type: holding
         data_type: uint32
@@ -202,8 +202,8 @@ modbus:
         device_class: energy
         state_class: total_increasing
 
-      - name: "Monthly Grid-Connected Electricity"
-        unique_id: "marstek_jupiter_c_plus_monthly_grid_electricity"
+      - name: "Marstek Jupiter C Plus Monthly Grid-Connected Electricity"
+        unique_id: "marstek_jupiter_c_plus_monthly_grid_connected_electricity"
         address: 0x0019
         input_type: holding
         data_type: uint32
@@ -213,73 +213,73 @@ modbus:
         device_class: energy
         state_class: total_increasing
 
-      - name: "Device ID"
+      - name: "Marstek Jupiter C Plus Device ID"
         unique_id: "marstek_jupiter_c_plus_device_id"
         address: 0x001B
         input_type: holding
         data_type: uint16
 
-      - name: "EMS Version"
+      - name: "Marstek Jupiter C Plus EMS Version"
         unique_id: "marstek_jupiter_c_plus_ems_version"
         address: 0x001C
         input_type: holding
         data_type: uint16
 
-      - name: "INV Version"
+      - name: "Marstek Jupiter C Plus INV Version"
         unique_id: "marstek_jupiter_c_plus_inv_version"
         address: 0x001D
         input_type: holding
         data_type: uint16
 
-      - name: "MPPT Version"
+      - name: "Marstek Jupiter C Plus MPPT Version"
         unique_id: "marstek_jupiter_c_plus_mppt_version"
         address: 0x001E
         input_type: holding
         data_type: uint16
 
-      - name: "BMS Version"
+      - name: "Marstek Jupiter C Plus BMS Version"
         unique_id: "marstek_jupiter_c_plus_bms_version"
         address: 0x001F
         input_type: holding
         data_type: uint16
 
-      - name: "Screen Version"
+      - name: "Marstek Jupiter C Plus Screen Version"
         unique_id: "marstek_jupiter_c_plus_screen_version"
         address: 0x0022
         input_type: holding
         data_type: uint16
 
-      - name: "Device Type"
+      - name: "Marstek Jupiter C Plus Device Type"
         unique_id: "marstek_jupiter_c_plus_device_type"
         address: 0x0025
         input_type: holding
         data_type: uint16
 
-      - name: "PV1 Working Status"
+      - name: "Marstek Jupiter C Plus PV1 Working Status"
         unique_id: "marstek_jupiter_c_plus_pv1_working_status"
         address: 0x1004
         input_type: holding
         data_type: uint16
 
-      - name: "PV2 Working Status"
+      - name: "Marstek Jupiter C Plus PV2 Working Status"
         unique_id: "marstek_jupiter_c_plus_pv2_working_status"
         address: 0x1005
         input_type: holding
         data_type: uint16
 
-      - name: "PV3 Working Status"
+      - name: "Marstek Jupiter C Plus PV3 Working Status"
         unique_id: "marstek_jupiter_c_plus_pv3_working_status"
         address: 0x1006
         input_type: holding
         data_type: uint16
 
-      - name: "PV4 Working Status"
+      - name: "Marstek Jupiter C Plus PV4 Working Status"
         unique_id: "marstek_jupiter_c_plus_pv4_working_status"
         address: 0x1007
         input_type: holding
         data_type: uint16
 
-      - name: "INV Working Status"
+      - name: "Marstek Jupiter C Plus INV Working Status"
         unique_id: "marstek_jupiter_c_plus_inv_working_status"
         address: 0x1008
         input_type: holding
@@ -287,7 +287,7 @@ modbus:
 
 template:
   - sensor:
-      - name: "Device Type Text"
+      - name: "Marstek Jupiter C Plus Device Type Text"
         unique_id: "marstek_jupiter_c_plus_device_type_text"
         state: >
           {% set device_type = states('sensor.marstek_jupiter_c_plus_device_type') | int(0) %}
@@ -307,7 +307,7 @@ template:
             Unknown
           {% endif %}
 
-      - name: "PV1 Status Text"
+      - name: "Marstek Jupiter C Plus PV1 Status Text"
         unique_id: "marstek_jupiter_c_plus_pv1_status_text"
         state: >
           {% if states('sensor.marstek_jupiter_c_plus_pv1_working_status') == '1' %}
@@ -316,7 +316,7 @@ template:
             Not Working
           {% endif %}
 
-      - name: "PV2 Status Text"
+      - name: "Marstek Jupiter C Plus PV2 Status Text"
         unique_id: "marstek_jupiter_c_plus_pv2_status_text"
         state: >
           {% if states('sensor.marstek_jupiter_c_plus_pv2_working_status') == '1' %}
@@ -325,7 +325,7 @@ template:
             Not Working
           {% endif %}
 
-      - name: "PV3 Status Text"
+      - name: "Marstek Jupiter C Plus PV3 Status Text"
         unique_id: "marstek_jupiter_c_plus_pv3_status_text"
         state: >
           {% if states('sensor.marstek_jupiter_c_plus_pv3_working_status') == '1' %}
@@ -334,7 +334,7 @@ template:
             Not Working
           {% endif %}
 
-      - name: "PV4 Status Text"
+      - name: "Marstek Jupiter C Plus PV4 Status Text"
         unique_id: "marstek_jupiter_c_plus_pv4_status_text"
         state: >
           {% if states('sensor.marstek_jupiter_c_plus_pv4_working_status') == '1' %}
@@ -343,7 +343,7 @@ template:
             Not Working
           {% endif %}
 
-      - name: "INV Status Text"
+      - name: "Marstek Jupiter C Plus INV Status Text"
         unique_id: "marstek_jupiter_c_plus_inv_status_text"
         state: >
           {% if states('sensor.marstek_jupiter_c_plus_inv_working_status') == '1' %}
@@ -352,7 +352,7 @@ template:
             Not Working
           {% endif %}
 
-      - name: "Total PV Power"
+      - name: "Marstek Jupiter C Plus Total PV Power"
         unique_id: "marstek_jupiter_c_plus_total_pv_power"
         unit_of_measurement: "W"
         device_class: power
